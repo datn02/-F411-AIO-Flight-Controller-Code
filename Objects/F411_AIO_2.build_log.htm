@@ -22,87 +22,13 @@ Dialog DLL:      TCM.DLL V1.48.0.0
  
 <h2>Project:</h2>
 E:\ARM Programming\Test F411_2\F411_AIO_2.uvprojx
-Project File Date:  06/11/2021
+Project File Date:  06/15/2021
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.16', folder: 'E:\Keil uVision\ARM\ARMCLANG\Bin'
 Rebuild target 'Target 1'
 compiling main.c...
-SPI.c(12): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-        GPIOA->MODER &= ~((1 << 9) | (1 << 10) | (1 << 12) | (1 << 14));
-                     ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SPI.c(18): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-        GPIOA->PUPDR &= ~((1 << 8) | (1 << 9));
-                     ~~ ^~~~~~~~~~~~~~~~~~~~~~
-SPI.c(45): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-        SPI1->CR1 &= ~(1 << 7);
-                  ~~ ^~~~~~~~~
-SPI.c(51): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-        SPI1->CR1 &= ~((1 << 10) | (1 << 11));
-                  ~~ ^~~~~~~~~~~~~~~~~~~~~~~~
-SPI.c(110): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
-        tempRegister = SPIx->CR1;
-                     ~ ~~~~~~^~~
-5 warnings generated.
-compiling SPI.c...
 compiling RCC_Config.c...
-usart.c(22): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-        GPIOA->MODER &= ~((1 << 18) | (1 << 20));
-                     ~~ ^~~~~~~~~~~~~~~~~~~~~~~~
-usart.c(35): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-        USART1->CR1 &= ~(1 << 12);
-                    ~~ ^~~~~~~~~~
-usart.c(61): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-        GPIOA->MODER &= ~((1 << 4) | (1 << 6));
-                     ~~ ^~~~~~~~~~~~~~~~~~~~~~
-usart.c(75): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-        USART2->CR1 &= ~(1 << 12);
-                    ~~ ^~~~~~~~~~
-usart.c(86): warning: unused variable 'buff' [-Wunused-variable]
-        char buff[80];
-             ^
-usart.c(84): warning: unused parameter 'msg' [-Wunused-parameter]
-void printMsg(char *msg, ...) {
-                    ^
-6 warnings generated.
-compiling usart.c...
-timer.c(50): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-        GPIOB->MODER &= ~((1 << 8) | (1 << 10) | (1 << 12) | (1 << 14));
-                     ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-timer.c(57): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-        GPIOB->PUPDR &= ~((3 << 8) | (3 << 10) | (3 << 12) | (3 << 14));
-                     ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-timer.c(129): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-        DMA1_Stream4->CR &= ~(1 << 0);
-                         ~~ ^~~~~~~~~
-timer.c(132): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-        DMA1_Stream5->CR &= ~(1 << 0);
-                         ~~ ^~~~~~~~~
-timer.c(135): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-        DMA1_Stream0->CR &= ~(1 << 0);
-                         ~~ ^~~~~~~~~
-timer.c(138): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-        DMA1_Stream3->CR &= ~(1 << 0);
-                         ~~ ^~~~~~~~~
-timer.c(331): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-                DMA1_Stream4->CR &= ~(1 << 0);
-                                 ~~ ^~~~~~~~~
-timer.c(348): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-                DMA1_Stream5->CR &= ~(1 << 0);
-                                 ~~ ^~~~~~~~~
-timer.c(365): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-                DMA1_Stream0->CR &= ~(1 << 0);
-                                 ~~ ^~~~~~~~~
-timer.c(382): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-                DMA1_Stream3->CR &= ~(1 << 0);
-                                 ~~ ^~~~~~~~~
-10 warnings generated.
-compiling timer.c...
-ibus.c(32): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
-      rxsum = (uint16_t) ibus[30] + (ibus[31]<<8);
-            ~ ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
-1 warning generated.
-compiling ibus.c...
 mpu6000.c(18): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         ENABLE_MPU6000;
         ^~~~~~~~~~~~~~
@@ -171,6 +97,48 @@ mpu6000.c(126): warning: implicit conversion changes signedness: 'int' to 'unsig
                                   ~~ ^~~~~~~~~
 11 warnings generated.
 compiling mpu6000.c...
+ibus.c(32): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+      rxsum = (uint16_t) ibus[30] + (ibus[31]<<8);
+            ~ ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+1 warning generated.
+compiling ibus.c...
+usart.c(22): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOA->MODER &= ~((1 << 18) | (1 << 20));
+                     ~~ ^~~~~~~~~~~~~~~~~~~~~~~~
+usart.c(35): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        USART1->CR1 &= ~(1 << 12);
+                    ~~ ^~~~~~~~~~
+usart.c(61): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOA->MODER &= ~((1 << 4) | (1 << 6));
+                     ~~ ^~~~~~~~~~~~~~~~~~~~~~
+usart.c(75): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        USART2->CR1 &= ~(1 << 12);
+                    ~~ ^~~~~~~~~~
+usart.c(86): warning: unused variable 'buff' [-Wunused-variable]
+        char buff[80];
+             ^
+usart.c(84): warning: unused parameter 'msg' [-Wunused-parameter]
+void printMsg(char *msg, ...) {
+                    ^
+6 warnings generated.
+compiling usart.c...
+SPI.c(12): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOA->MODER &= ~((1 << 9) | (1 << 10) | (1 << 12) | (1 << 14));
+                     ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SPI.c(18): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOA->PUPDR &= ~((1 << 8) | (1 << 9));
+                     ~~ ^~~~~~~~~~~~~~~~~~~~~~
+SPI.c(45): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        SPI1->CR1 &= ~(1 << 7);
+                  ~~ ^~~~~~~~~
+SPI.c(51): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        SPI1->CR1 &= ~((1 << 10) | (1 << 11));
+                  ~~ ^~~~~~~~~~~~~~~~~~~~~~~~
+SPI.c(110): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        tempRegister = SPIx->CR1;
+                     ~ ~~~~~~^~~
+5 warnings generated.
+compiling SPI.c...
 complementary_filter.c(17): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
         float acc_total_vector = sqrt((acc_pitch * acc_pitch) + (acc_roll * acc_roll) + (acc_yaw * acc_yaw));
               ~~~~~~~~~~~~~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -190,6 +158,38 @@ LED_Config.c(21): warning: implicit conversion changes signedness: 'int' to 'uns
                      ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 2 warnings generated.
 compiling LED_Config.c...
+timer.c(50): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOB->MODER &= ~((1 << 8) | (1 << 10) | (1 << 12) | (1 << 14));
+                     ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+timer.c(57): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOB->PUPDR &= ~((3 << 8) | (3 << 10) | (3 << 12) | (3 << 14));
+                     ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+timer.c(129): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        DMA1_Stream4->CR &= ~(1 << 0);
+                         ~~ ^~~~~~~~~
+timer.c(132): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        DMA1_Stream5->CR &= ~(1 << 0);
+                         ~~ ^~~~~~~~~
+timer.c(135): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        DMA1_Stream0->CR &= ~(1 << 0);
+                         ~~ ^~~~~~~~~
+timer.c(138): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        DMA1_Stream3->CR &= ~(1 << 0);
+                         ~~ ^~~~~~~~~
+timer.c(331): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMA1_Stream4->CR &= ~(1 << 0);
+                                 ~~ ^~~~~~~~~
+timer.c(348): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMA1_Stream5->CR &= ~(1 << 0);
+                                 ~~ ^~~~~~~~~
+timer.c(365): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMA1_Stream0->CR &= ~(1 << 0);
+                                 ~~ ^~~~~~~~~
+timer.c(382): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMA1_Stream3->CR &= ~(1 << 0);
+                                 ~~ ^~~~~~~~~
+10 warnings generated.
+compiling timer.c...
 task.c(47): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
                 LED_ON;
                 ^~~~~~
@@ -244,12 +244,38 @@ mixer.c(30): warning: implicit conversion turns floating-point number into integ
           ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
 4 warnings generated.
 compiling mixer.c...
-assembling startup_stm32f411xe.s...
+MahonyAHRS.c(33): warning: no previous extern declaration for non-static variable 'integralFBx' [-Wmissing-variable-declarations]
+volatile float integralFBx = 0.0f,  integralFBy = 0.0f, integralFBz = 0.0f;     // integral error terms scaled by Ki
+               ^
+MahonyAHRS.c(33): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile float integralFBx = 0.0f,  integralFBy = 0.0f, integralFBz = 0.0f;     // integral error terms scaled by Ki
+         ^
+MahonyAHRS.c(33): warning: no previous extern declaration for non-static variable 'integralFBy' [-Wmissing-variable-declarations]
+volatile float integralFBx = 0.0f,  integralFBy = 0.0f, integralFBz = 0.0f;     // integral error terms scaled by Ki
+                                    ^
+MahonyAHRS.c(33): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile float integralFBx = 0.0f,  integralFBy = 0.0f, integralFBz = 0.0f;     // integral error terms scaled by Ki
+         ^
+MahonyAHRS.c(33): warning: no previous extern declaration for non-static variable 'integralFBz' [-Wmissing-variable-declarations]
+volatile float integralFBx = 0.0f,  integralFBy = 0.0f, integralFBz = 0.0f;     // integral error terms scaled by Ki
+                                                        ^
+MahonyAHRS.c(33): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile float integralFBx = 0.0f,  integralFBy = 0.0f, integralFBz = 0.0f;     // integral error terms scaled by Ki
+         ^
+MahonyAHRS.c(90): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+        bx = sqrt(hx * hx + hy * hy);
+           ~ ^~~~~~~~~~~~~~~~~~~~~~~
+MahonyAHRS.c(90): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+        bx = sqrt(hx * hx + hy * hy);
+             ~~~~ ~~~~~~~~^~~~~~~~~
+5 warnings generated.
+compiling MahonyAHRS.c...
 compiling system_stm32f4xx.c...
+assembling startup_stm32f411xe.s...
 linking...
 Program Size: Code=8412 RO-data=472 RW-data=4 ZI-data=1976  
 FromELF: creating hex file...
-".\Objects\F411_AIO_2.axf" - 0 Error(s), 48 Warning(s).
+".\Objects\F411_AIO_2.axf" - 0 Error(s), 53 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -275,12 +301,12 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.4.0
 
    * Component: Keil::Device:Startup:2.6.3
-      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
       Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
       Source file:   MDK\Device\Source\ARM\STM32F411xx_OPT.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f411xe.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

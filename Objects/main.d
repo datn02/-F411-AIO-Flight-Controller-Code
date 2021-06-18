@@ -16,4 +16,4 @@
   E:\Keil\ uVision\ARM\ARMCLANG\Bin\..\include\string.h \
   E:\Keil\ uVision\ARM\ARMCLANG\Bin\..\include\stdlib.h \
   E:\Keil\ uVision\ARM\ARMCLANG\Bin\..\include\stdarg.h ibus.h SPI.h \
-  mpu6000.h complementary_filter.h pid.h task.h
+  mpu6000.h complementary_filter.h MahonyAHRS.h pid.h task.h

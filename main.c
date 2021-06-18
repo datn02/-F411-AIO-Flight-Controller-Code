@@ -9,6 +9,7 @@
 #include "SPI.h"
 #include "mpu6000.h"
 #include "complementary_filter.h"
+#include "MahonyAHRS.h"
 #include "pid.h"
 #include "task.h"
 

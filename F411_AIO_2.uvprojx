@@ -503,6 +503,16 @@
               <FileType>5</FileType>
               <FilePath>.\mixer.h</FilePath>
             </File>
+            <File>
+              <FileName>MahonyAHRS.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MahonyAHRS.c</FilePath>
+            </File>
+            <File>
+              <FileName>MahonyAHRS.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\MahonyAHRS.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
